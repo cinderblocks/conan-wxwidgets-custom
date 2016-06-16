@@ -12,7 +12,7 @@ import codecs
 class WxWidgetsConan(ConanFile):
     name = "wxWidgets_custom"
     version = "master"
-    url = "https://github.com/SteffenL/conan-wxwidgets-custom"
+    url = "https://github.com/cinderblocks/conan-wxwidgets29"
     license = "wxWindows Library Licence"
     settings = {
         "os": ["Windows"],
@@ -30,9 +30,9 @@ class WxWidgetsConan(ConanFile):
     # If this is changed, remember to update exports as well.
     repo_subdir = "wxWidgets"
 
-    git_branch_format = "custom-{version}"
-    git_branch = None
-    git_repository_url = "https://github.com/SteffenL/wxWidgets"
+    git_branch_format = "{version}"
+    git_branch = "WX_2_9_0_BRANCH"
+    git_repository_url = "http://github.com/wxWidgets/wxWidgets"
 
     wx_lib_name_version = None
     wx_platform = None
